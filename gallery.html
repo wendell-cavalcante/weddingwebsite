@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/navbar.css">
+    <link rel="stylesheet" href="src/css/button.css">
+    <link rel="stylesheet" href="src/css/gallery.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+
+    <title>Galeria — Essence Eventos</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html">
+                <img src="src/images/logo.png" alt="Logo Essence Eventos" class="logo">
+            </a>
+
+            <button class="btn-mobile" type="button" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul id="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="index.html#eventos">Eventos</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html" class="current">Galeria</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contato</a>
+                </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-default">
+                Contatar
+            </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="gallery-hero reveal">
+
+            <img src="src/images/floral-spray.svg" alt="" class="floral-top" aria-hidden="true">
+            <img src="src/images/floral-spray.svg" alt="" class="floral-bottom" aria-hidden="true">
+
+            <p class="eyebrow">Registros que contam histórias</p>
+            <h1 class="script">nossa galeria</h1>
+            <p>
+                Um recorte dos momentos mais especiais que já ajudamos a
+                celebrar — cada imagem carrega um pouco da emoção do dia.
+            </p>
+
+        </section>
+
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="todas">Todas</button>
+            <button class="filter-btn" data-filter="cerimonia">Cerimônia</button>
+            <button class="filter-btn" data-filter="recepcao">Recepção</button>
+            <button class="filter-btn" data-filter="makingof">Making of</button>
+        </div>
+
+        <div class="gallery-grid">
+
+            <figure class="gallery-item" data-category="cerimonia">
+                <img src="src/images/main.jpg" alt="Mãos entrelaçadas durante a cerimônia">
+                <figcaption class="gallery-caption">
+                    <span>Cerimônia</span>
+                    <p>Um sim guardado nas mãos</p>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item" data-category="cerimonia">
+                <img src="src/images/SaveClip_App_708441928_17883807345581491_36045760631290514_n.jpg" alt="Noivos trocando votos durante a cerimônia">
+                <figcaption class="gallery-caption">
+                    <span>Cerimônia</span>
+                    <p>A troca de votos</p>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item" data-category="makingof">
+                <img src="src/images/SaveClip_App_622657442_17862852504581491_8356659685489996486_n.jpg" alt="Noivos testa com testa na igreja">
+                <figcaption class="gallery-caption">
+                    <span>Making of</span>
+                    <p>Segundos antes do sim</p>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item" data-category="recepcao">
+                <img src="src/images/SaveClip_App_589016596_18342706645224890_4035988972740324710_n.jpg" alt="Convidado no salão decorado antes da recepção">
+                <figcaption class="gallery-caption">
+                    <span>Recepção</span>
+                    <p>O salão pronto para receber</p>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item" data-category="makingof">
+                <img src="src/images/SaveClip_App_694248623_17881562835581491_3489639540585082290_n.jpg" alt="Ajustando o véu da noiva antes da entrada">
+                <figcaption class="gallery-caption">
+                    <span>Making of</span>
+                    <p>Os últimos ajustes</p>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item" data-category="recepcao">
+                <img src="src/images/SaveClip_App_782615552_17900299290581491_5009198736843632297_n.jpg" alt="Família celebrando junto ao bolo na recepção">
+                <figcaption class="gallery-caption">
+                    <span>Recepção</span>
+                    <p>Brindes e afeto</p>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item" data-category="cerimonia">
+                <img src="src/images/SaveClip_App_589963015_18342706681224890_479718806173536414_n.jpg" alt="Celebrante conduzindo a cerimônia sob arco de flores">
+                <figcaption class="gallery-caption">
+                    <span>Cerimônia</span>
+                    <p>Sob o arco de flores</p>
+                </figcaption>
+            </figure>
+
+        </div>
+
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox-prev" aria-label="Foto anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <img id="lightboxImg" src="" alt="">
+        <button class="lightbox-next" aria-label="Próxima foto"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <a
+        href="https://wa.me/5511983184820"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar pelo WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <img src="src/images/logo.png" alt="Logo Essence Eventos" class="logo-footer">
+                <p>
+                    Assessoria de casamentos em São Paulo, dedicada a transformar
+                    sonhos em celebrações inesquecíveis.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#eventos">Eventos</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Fale conosco</h4>
+                <div class="footer-social">
+                    <a href="https://wa.me/5511983184820" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rosavieira.essence" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Essence Eventos. Todos os direitos reservados.</p>
+            <p>Feito com carinho para casais apaixonados.</p>
+        </div>
+
+    </footer>
+
+    <script src="src/js/script.js"></script>
+    <script src="src/js/gallery.js"></script>
+
+</body>
+</html>
