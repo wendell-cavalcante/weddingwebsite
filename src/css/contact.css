@@ -1,0 +1,138 @@
+.contact-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 80px 40px 100px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+}
+
+.contact-info .eyebrow {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--gold-deep);
+  margin-bottom: 14px;
+}
+
+.contact-info h1 {
+  font-size: 40px;
+  line-height: 1.18;
+}
+
+.contact-text {
+  margin-top: 18px;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+.contact-channels {
+  margin-top: 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-channels li {
+  margin-bottom: 16px;
+}
+
+.contact-channels a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-channels a:hover {
+  color: var(--gold-deep);
+}
+
+.contact-channels i {
+  color: var(--gold-deep);
+  width: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.contact-form {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--cream);
+  color: var(--ink);
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--ink-soft);
+  opacity: 0.7;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 1px;
+}
+
+.contact-form button {
+  margin-top: 8px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.form-status {
+  font-size: 14px;
+  color: var(--gold-deep);
+  min-height: 20px;
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    padding: 56px 24px 60px;
+    gap: 40px;
+  }
+
+  .contact-info h1 {
+    font-size: 30px;
+  }
+
+  .contact-form {
+    padding: 24px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    align-self: stretch;
+  }
+}

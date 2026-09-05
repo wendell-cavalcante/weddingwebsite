@@ -1,52 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Wedding</title>
+    <link rel="stylesheet" href="src/css/navbar.css">
+
+    <title>Essence Eventos — Assessoria de Casamento</title>
 </head>
+
 <body>
 
     <!-- HEADER -->
     <header>
-        <nav class ="navbar">
-            <img src="src/images/logo.png" 
-            alt="Logo"
-            class="logo">
+        <nav class="navbar">
 
-            <button class="btn btn-mobile">
+            <a href="index.html">
+                <img
+                    src="src/images/logo.png"
+                    alt="Logo Essence Eventos"
+                    class="logo"
+                >
+            </a>
+
+            <button class="btn btn-mobile" type="button">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
             <ul id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Galeria</a></li>
-                <li><a href="#depoiments">Depoimentos</a></li>
-                <li><a href="#about">Sobre nós</a></li>
-                
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#eventos">Eventos</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contato</a>
+                </li>
 
             </ul>
 
-                <a href="#" class="btn btn-default">
-                    Contatar
-                </a>   
-            
+            <a href="contact.html" class="btn btn-default">
+                Contatar
+            </a>
+
         </nav>
     </header>
 
-    <main id="container">
 
-        <img src="src/images/test.jpg" 
-        alt="Imagem de fundo" 
-        class="background-image">
+    <!-- HOME / HERO -->
+    <main>
 
+        <section id="home" class="hero">
+
+            <img
+                src="src/images/test.jpg"
+                alt="Casamento realizado pela Essence Eventos"
+                class="background-image"
+            >
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    Cada detalhe, com intenção
+                </p>
+
+                <h1>
+                    Transformamos sonhos em eventos inesquecíveis.
+                </h1>
+
+                <p class="hero-text">
+                    Cuidamos de cada etapa do seu casamento — do primeiro
+                    encontro com fornecedores ao último brinde da festa —
+                    para que vocês vivam o dia com presença, não com preocupação.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="contact.html" class="btn btn-default">
+                        Agendar conversa
+                    </a>
+
+                    <a href="#eventos" class="btn-ghost">
+                        Conhecer nossos eventos
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EVENTOS -->
+        <section id="eventos" class="events-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Nossos eventos
+                </p>
+
+                <h2>
+                    Momentos que merecem ser lembrados
+                </h2>
+
+                <p>
+                    Cada casamento é planejado de forma única,
+                    respeitando a história e os desejos de cada casal.
+                </p>
+
+            </div>
+
+
+            <div class="events-grid">
+
+                <!-- EVENTO 1 -->
+                <article class="event-card">
+
+                    <img
+                        src="src/images/test.jpg"
+                        alt="Casamento realizado pela Essence Eventos"
+                    >
+
+                    <div class="event-card-content">
+
+                        <p class="event-location">
+                            São Paulo — SP
+                        </p>
+
+                        <h3>
+                            Um dia para sempre
+                        </h3>
+
+                        <p>
+                            Planejamento e assessoria completa para
+                            um casamento elegante e inesquecível.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- EVENTO 2 -->
+                <article class="event-card">
+
+                    <img
+                        src="src/images/test.jpg"
+                        alt="Evento de casamento"
+                    >
+
+                    <div class="event-card-content">
+
+                        <p class="event-location">
+                            São Paulo — SP
+                        </p>
+
+                        <h3>
+                            Amor em cada detalhe
+                        </h3>
+
+                        <p>
+                            Uma celebração planejada para refletir
+                            a personalidade e a história do casal.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- EVENTO 3 -->
+                <article class="event-card">
+
+                    <img
+                        src="src/images/test.jpg"
+                        alt="Celebração de casamento"
+                    >
+
+                    <div class="event-card-content">
+
+                        <p class="event-location">
+                            São Paulo — SP
+                        </p>
+
+                        <h3>
+                            Uma celebração especial
+                        </h3>
+
+                        <p>
+                            Organização, cuidado e atenção em cada
+                            etapa para que o casal aproveite o grande dia.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAMADA PARA CONTATO -->
+        <section class="home-contact">
+
+            <p class="eyebrow">
+                Vamos realizar esse sonho?
+            </p>
+
+            <h2>
+                Conte para nós como você imagina o seu casamento.
+            </h2>
+
+            <p>
+                Entre em contato e vamos conversar sobre todos os detalhes.
+            </p>
+
+            <a href="contact.html" class="btn btn-default">
+                Falar com a Essence
+            </a>
+
+        </section>
 
     </main>
 
+
     <script src="src/js/script.js"></script>
-    
+
 </body>
+
 </html>
