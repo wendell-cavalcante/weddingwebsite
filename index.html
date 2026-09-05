@@ -7,10 +7,13 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="src/css/variables.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/navbar.css">
+    <link rel="stylesheet" href="src/css/button.css">
+    <link rel="stylesheet" href="src/css/footer.css">
 
     <title>Essence Eventos — Assessoria de Casamento</title>
 </head>
@@ -29,14 +32,14 @@
                 >
             </a>
 
-            <button class="btn btn-mobile" type="button">
+            <button class="btn-mobile" type="button" aria-label="Abrir menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
             <ul id="nav-links">
 
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="#home" class="current">Home</a>
                 </li>
 
                 <li>
@@ -62,43 +65,125 @@
 
         <section id="home" class="hero">
 
-            <img
-                src="src/images/test.jpg"
-                alt="Casamento realizado pela Essence Eventos"
-                class="background-image"
-            >
+            <div class="container">
 
-            <div class="hero-overlay"></div>
+                <div class="hero-copy">
 
-            <div class="hero-content">
+                    <p class="eyebrow">Assessoria de casamentos boutique</p>
 
-                <p class="eyebrow">
-                    Cada detalhe, com intenção
-                </p>
+                    <p class="hero-lede">Onde cada detalhe conta</p>
 
-                <h1>
-                    Transformamos sonhos em eventos inesquecíveis.
-                </h1>
+                    <h1 class="script">uma nova história</h1>
 
-                <p class="hero-text">
-                    Cuidamos de cada etapa do seu casamento — do primeiro
-                    encontro com fornecedores ao último brinde da festa —
-                    para que vocês vivam o dia com presença, não com preocupação.
-                </p>
+                    <p class="hero-text">
+                        Cuidamos de cada etapa do seu casamento — do primeiro
+                        encontro com fornecedores ao último brinde da festa —
+                        para que vocês vivam o dia com presença, não com preocupação.
+                    </p>
 
-                <div class="hero-actions">
+                    <div class="hero-actions">
 
-                    <a href="contact.html" class="btn btn-default">
-                        Agendar conversa
-                    </a>
+                        <a href="contact.html" class="btn btn-default">
+                            Agendar conversa
+                        </a>
 
-                    <a href="#eventos" class="btn-ghost">
-                        Conhecer nossos eventos
-                        <i class="fa-solid fa-arrow-down"></i>
-                    </a>
+                        <a href="#eventos" class="btn-ghost">
+                            Conhecer nossos eventos
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+
+                    </div>
 
                 </div>
 
+                <div class="hero-frame">
+
+                    <img src="src/images/floral-spray.svg" alt="" class="floral-top" aria-hidden="true">
+                    <img src="src/images/floral-spray.svg" alt="" class="floral-bottom" aria-hidden="true">
+
+                    <div class="frame-image">
+                        <img
+                            src="src/images/test.jpg"
+                            alt="Casamento realizado pela Essence Eventos"
+                        >
+                    </div>
+
+                    <div class="seal" aria-hidden="true">
+                        <svg viewBox="0 0 100 100">
+                            <defs>
+                                <path id="sealCircle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                            </defs>
+                            <text font-size="8.6" letter-spacing="2" fill="#8C6530">
+                                <textPath href="#sealCircle" startOffset="0%">
+                                    ESSENCE • ASSESSORIA • ESSENCE • ASSESSORIA •
+                                </textPath>
+                            </text>
+                        </svg>
+                        <i class="fa-solid fa-heart seal-heart"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="hero-highlights">
+            <div class="container">
+
+                <div class="highlight-item">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        <h4>Assessoria completa</h4>
+                        <p>Do planejamento ao dia do evento</p>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <i class="fa-solid fa-seedling"></i>
+                    <div>
+                        <h4>Fornecedores selecionados</h4>
+                        <p>Parceiros de confiança e qualidade</p>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                    <div>
+                        <h4>Cuidado em cada detalhe</h4>
+                        <p>Presença total no seu grande dia</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- NOSSA ESSÊNCIA -->
+        <section class="essence-section reveal">
+
+            <div class="collage">
+                <figure>
+                    <img src="src/images/test.jpg" alt="Momento de um casamento assessorado pela Essence">
+                </figure>
+                <figure>
+                    <img src="src/images/test.jpg" alt="Detalhe de um casamento assessorado pela Essence">
+                </figure>
+                <figure>
+                    <img src="src/images/test.jpg" alt="Celebração de um casamento assessorado pela Essence">
+                </figure>
+            </div>
+
+            <div class="essence-copy">
+                <p class="eyebrow">Quem somos</p>
+                <h2>Assessoria com alma, do primeiro encontro ao último brinde</h2>
+                <p>
+                    Somos uma equipe apaixonada por histórias de amor. Escutamos,
+                    organizamos e cuidamos de cada detalhe para que vocês vivam o
+                    dia mais importante das suas vidas com leveza — e com quem
+                    ama o que faz ao seu lado.
+                </p>
+                <a href="#eventos" class="btn btn-outline">Conheça nosso trabalho</a>
             </div>
 
         </section>
@@ -107,11 +192,9 @@
         <!-- EVENTOS -->
         <section id="eventos" class="events-section">
 
-            <div class="section-heading">
+            <div class="section-heading reveal">
 
-                <p class="eyebrow">
-                    Nossos eventos
-                </p>
+                <p class="eyebrow">Nossos eventos</p>
 
                 <h2>
                     Momentos que merecem ser lembrados
@@ -128,17 +211,19 @@
             <div class="events-grid">
 
                 <!-- EVENTO 1 -->
-                <article class="event-card">
+                <article class="event-card reveal">
 
-                    <img
-                        src="src/images/test.jpg"
-                        alt="Casamento realizado pela Essence Eventos"
-                    >
+                    <div class="event-image">
+                        <img
+                            src="src/images/test.jpg"
+                            alt="Casamento realizado pela Essence Eventos"
+                        >
+                    </div>
 
                     <div class="event-card-content">
 
                         <p class="event-location">
-                            São Paulo — SP
+                            <i class="fa-solid fa-location-dot"></i> São Paulo — SP
                         </p>
 
                         <h3>
@@ -156,17 +241,19 @@
 
 
                 <!-- EVENTO 2 -->
-                <article class="event-card">
+                <article class="event-card reveal">
 
-                    <img
-                        src="src/images/test.jpg"
-                        alt="Evento de casamento"
-                    >
+                    <div class="event-image">
+                        <img
+                            src="src/images/test.jpg"
+                            alt="Evento de casamento"
+                        >
+                    </div>
 
                     <div class="event-card-content">
 
                         <p class="event-location">
-                            São Paulo — SP
+                            <i class="fa-solid fa-location-dot"></i> São Paulo — SP
                         </p>
 
                         <h3>
@@ -184,17 +271,19 @@
 
 
                 <!-- EVENTO 3 -->
-                <article class="event-card">
+                <article class="event-card reveal">
 
-                    <img
-                        src="src/images/test.jpg"
-                        alt="Celebração de casamento"
-                    >
+                    <div class="event-image">
+                        <img
+                            src="src/images/test.jpg"
+                            alt="Celebração de casamento"
+                        >
+                    </div>
 
                     <div class="event-card-content">
 
                         <p class="event-location">
-                            São Paulo — SP
+                            <i class="fa-solid fa-location-dot"></i> São Paulo — SP
                         </p>
 
                         <h3>
@@ -216,11 +305,12 @@
 
 
         <!-- CHAMADA PARA CONTATO -->
-        <section class="home-contact">
+        <section class="home-contact reveal">
 
-            <p class="eyebrow">
-                Vamos realizar esse sonho?
-            </p>
+            <img src="src/images/floral-spray.svg" alt="" class="floral-top" aria-hidden="true">
+            <img src="src/images/floral-spray.svg" alt="" class="floral-bottom" aria-hidden="true">
+
+            <p class="eyebrow">Vamos realizar esse sonho?</p>
 
             <h2>
                 Conte para nós como você imagina o seu casamento.
@@ -248,7 +338,52 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <img src="src/images/logo.png" alt="Logo Essence Eventos" class="logo-footer">
+                <p>
+                    Assessoria de casamentos em São Paulo, dedicada a transformar
+                    sonhos em celebrações inesquecíveis.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Fale conosco</h4>
+                <div class="footer-social">
+                    <a href="https://wa.me/5511983184820" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rosavieira.essence" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="mailto:contato@essenceeventos.com.br" aria-label="E-mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Essence Eventos. Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+
     <script src="src/js/script.js"></script>
 
 </body>
+
 </html>

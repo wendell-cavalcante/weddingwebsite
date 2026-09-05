@@ -1,19 +1,46 @@
 :root {
-    --primary-color: #d4b788;
-    --secondary-color: #aa926c;
-    --background-color: #faf3f0;
-    --details-color: #d4af37;
-    --details-color-2:#bd9b2c;
-    --text-color: #333;
+    /* base palette */
+    --cream: #FAF4EC;
+    --cream-deep: #F1E4D6;
+    --paper: #FFFDFB;
+    --ink: #362B22;
+    --ink-soft: #7A6C5D;
+    --gold: #B9895A;
+    --gold-deep: #8C6530;
+    --gold-light: #E4C9A4;
+    --rose: #E3C3B6;
+    --line: rgba(54, 43, 34, 0.14);
+
+    /* legacy aliases kept so older markup/CSS still resolves */
+    --primary-color: var(--gold);
+    --secondary-color: var(--gold-deep);
+    --background-color: var(--cream);
+    --details-color: var(--gold);
+    --details-color-2: var(--gold-deep);
+    --text-color: var(--ink);
 
     --neutral-0: #FFFFFF;
-    --neutral-1: #FAF3F0;
-    --neutral-2: #F3EBE6;
-    --neutral-3: #E6DCD3;
+    --neutral-1: #FAF4EC;
+    --neutral-2: #F1E4D6;
+    --neutral-3: #E4C9A4;
     --neutral-4: #D9CCBF;
     --neutral-5: #CBB9AA;
     --neutral-6: #A8988A;
     --neutral-7: #88786A;
     --neutral-8: #5C4F44;
-    --neutral-9: #3D332B;
+    --neutral-9: #362B22;
+
+    /* type */
+    --font-display: 'Cormorant Garamond', serif;
+    --font-script: 'Parisienne', cursive;
+    --font-body: 'Jost', sans-serif;
+
+    /* motion */
+    --ease: cubic-bezier(.4, 0, .2, 1);
+    --fast: .25s;
+    --slow: .6s;
+
+    /* layout */
+    --container: 1180px;
+    --radius: 6px;
 }
