@@ -6,11 +6,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="src/css/variables.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/navbar.css">
+    <link rel="stylesheet" href="src/css/button.css">
     <link rel="stylesheet" href="src/css/contact.css">
+    <link rel="stylesheet" href="src/css/footer.css">
 
     <title>Contato — Essence Eventos</title>
 </head>
@@ -24,7 +27,7 @@
                 <img src="src/images/logo.png" alt="Logo Essence Eventos" class="logo">
             </a>
 
-            <button class="btn btn-mobile" type="button">
+            <button class="btn-mobile" type="button" aria-label="Abrir menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
@@ -34,7 +37,7 @@
                 </li>
 
                 <li>
-                    <a href="projects.html">Eventos</a>
+                    <a href="index.html#eventos">Eventos</a>
                 </li>
 
                 <li>
@@ -52,161 +55,210 @@
 
     <main>
 
-        <section class="contact-section">
+        <div class="contact-hero">
+            <section class="contact-section reveal">
 
-            <div class="contact-info">
+                <div class="contact-info">
 
-                <p class="eyebrow">
-                    Vamos conversar
-                </p>
+                    <img src="src/images/floral-spray.svg" alt="" class="floral-top" aria-hidden="true">
 
-                <h1>
-                    Conte um pouco sobre o seu casamento
-                </h1>
+                    <p class="eyebrow">
+                        Vamos conversar
+                    </p>
 
-                <p class="contact-text">
-                    Preencha o formulário ao lado ou fale diretamente
-                    com a gente pelos nossos canais de atendimento.
-                </p>
+                    <h1 class="script">
+                        conte a sua história
+                    </h1>
 
-
-                <ul class="contact-channels">
-
-                    <li>
-                        <a href="https://wa.me/5511983184820"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            <i class="fa-brands fa-whatsapp"></i>
-
-                            <span>
-                                WhatsApp — (11) 98318-4820
-                            </span>
-
-                        </a>
-                    </li>
+                    <p class="contact-text">
+                        Preencha o formulário ao lado ou fale diretamente
+                        com a gente pelos nossos canais de atendimento.
+                    </p>
 
 
-                    <li>
-                        <a href="https://www.instagram.com/rosavieira.essence"
-                           target="_blank"
-                           rel="noopener noreferrer">
+                    <ul class="contact-channels">
 
-                            <i class="fa-brands fa-instagram"></i>
+                        <li>
+                            <a href="https://wa.me/5511983184820"
+                               target="_blank"
+                               rel="noopener noreferrer">
 
-                            <span>
-                                Instagram — @rosavieira.essence
-                            </span>
+                                <span class="icon-circle"><i class="fa-brands fa-whatsapp"></i></span>
 
-                        </a>
-                    </li>
+                                <span>
+                                    WhatsApp — (11) 98318-4820
+                                </span>
 
-
-                    <li>
-                        <a href="mailto:contato@essenceeventos.com.br">
-
-                            <i class="fa-solid fa-envelope"></i>
-
-                            <span>
-                                contato@essenceeventos.com.br
-                            </span>
-
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
+                            </a>
+                        </li>
 
 
-            <form class="contact-form" id="contactForm">
+                        <li>
+                            <a href="https://www.instagram.com/rosavieira.essence"
+                               target="_blank"
+                               rel="noopener noreferrer">
 
-                <label>
-                    Nome completo
+                                <span class="icon-circle"><i class="fa-brands fa-instagram"></i></span>
 
-                    <input
-                        type="text"
-                        name="nome"
-                        placeholder="Digite seu nome"
-                        required
+                                <span>
+                                    Instagram — @rosavieira.essence
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="mailto:contato@essenceeventos.com.br">
+
+                                <span class="icon-circle"><i class="fa-solid fa-envelope"></i></span>
+
+                                <span>
+                                    contato@essenceeventos.com.br
+                                </span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <form class="contact-form" id="contactForm">
+
+                    <label>
+                        Nome completo
+
+                        <input
+                            type="text"
+                            name="nome"
+                            placeholder="Digite seu nome"
+                            required
+                        >
+                    </label>
+
+
+                    <label>
+                        E-mail
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="seuemail@email.com"
+                            required
+                        >
+                    </label>
+
+
+                    <label>
+                        Telefone / WhatsApp
+
+                        <input
+                            type="tel"
+                            name="telefone"
+                            placeholder="(11) 99999-9999"
+                            required
+                        >
+                    </label>
+
+
+                    <label>
+                        Data prevista do evento
+
+                        <input
+                            type="date"
+                            name="data_evento"
+                        >
+                    </label>
+
+
+                    <label>
+                        Conte um pouco sobre o que você procura
+
+                        <textarea
+                            name="mensagem"
+                            rows="5"
+                            placeholder="Conte um pouco sobre o seu casamento, o que você procura e como podemos ajudar..."
+                            required
+                        ></textarea>
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-default"
                     >
-                </label>
+                        Enviar mensagem
+                    </button>
 
 
-                <label>
-                    E-mail
+                    <p
+                        class="form-status"
+                        id="formStatus"
+                    ></p>
 
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="seuemail@email.com"
-                        required
-                    >
-                </label>
+                </form>
 
-
-                <label>
-                    Telefone / WhatsApp
-
-                    <input
-                        type="tel"
-                        name="telefone"
-                        placeholder="(11) 99999-9999"
-                        required
-                    >
-                </label>
-
-
-                <label>
-                    Data prevista do evento
-
-                    <input
-                        type="date"
-                        name="data_evento"
-                    >
-                </label>
-
-
-                <label>
-                    Conte um pouco sobre o que você procura
-
-                    <textarea
-                        name="mensagem"
-                        rows="5"
-                        placeholder="Conte um pouco sobre o seu casamento, o que você procura e como podemos ajudar..."
-                        required
-                    ></textarea>
-                </label>
-
-
-                <button
-                    type="submit"
-                    class="btn btn-default"
-                >
-                    Enviar mensagem
-                </button>
-
-
-                <p
-                    class="form-status"
-                    id="formStatus"
-                ></p>
-
-            </form>
-
-        </section>
+            </section>
+        </div>
 
     </main>
 
     <a
-    href="https://wa.me/5511983184820"
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Falar pelo WhatsApp"
->
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
+        href="https://wa.me/5511983184820"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar pelo WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <img src="src/images/logo.png" alt="Logo Essence Eventos" class="logo-footer">
+                <p>
+                    Assessoria de casamentos em São Paulo, dedicada a transformar
+                    sonhos em celebrações inesquecíveis.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#eventos">Eventos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Fale conosco</h4>
+                <div class="footer-social">
+                    <a href="https://wa.me/5511983184820" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rosavieira.essence" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="mailto:contato@essenceeventos.com.br" aria-label="E-mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Essence Eventos. Todos os direitos reservados.</p>
+            <p>Feito com carinho para casais apaixonados.</p>
+        </div>
+
+    </footer>
 
     <script src="src/js/script.js"></script>
     <script src="src/js/contact-form.js"></script>
