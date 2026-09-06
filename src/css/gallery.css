@@ -48,51 +48,12 @@
 }
 
 /* =========================================
-   FILTROS — controle deslizante
-   ========================================= */
-
-.gallery-filters {
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin: 40px auto 50px;
-  padding: 6px;
-  max-width: fit-content;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 40px;
-  box-shadow: 0 16px 32px -26px rgba(54, 43, 34, 0.4);
-}
-
-.filter-btn {
-  border: none;
-  background: transparent;
-  padding: 10px 22px;
-  font-family: var(--font-body);
-  font-size: 14px;
-  color: var(--ink-soft);
-  border-radius: 30px;
-  cursor: pointer;
-  transition: color var(--fast) var(--ease), background var(--fast) var(--ease);
-}
-
-.filter-btn:hover {
-  color: var(--gold-deep);
-}
-
-.filter-btn.active {
-  background: var(--gold);
-  color: var(--paper);
-}
-
-/* =========================================
    GRID ESTILO MOSAICO
    ========================================= */
 
 .gallery-grid {
   max-width: var(--container);
-  margin: 0 auto;
+  margin: 50px auto 0;
   padding: 0 40px 100px;
   column-count: 3;
   column-gap: 24px;
@@ -107,10 +68,6 @@
   cursor: pointer;
   box-shadow: 0 18px 34px -26px rgba(54, 43, 34, 0.45);
   transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
-}
-
-.gallery-item.hidden {
-  display: none;
 }
 
 .gallery-item img {
@@ -167,10 +124,8 @@
   }
   .gallery-grid {
     column-count: 1;
+    margin-top: 30px;
     padding: 0 24px 70px;
-  }
-  .gallery-filters {
-    margin: 28px auto 34px;
   }
 }
 
