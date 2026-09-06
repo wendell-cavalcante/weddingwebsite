@@ -24,26 +24,12 @@ a.btn {
   background-color: var(--gold);
   color: var(--paper);
   border-radius: 30px;
-  transition: color var(--fast) var(--ease), box-shadow var(--fast) var(--ease);
+  transition: background-color var(--fast) var(--ease), box-shadow var(--fast) var(--ease);
   box-shadow: 0 6px 18px -8px rgba(140, 101, 48, 0.55);
 }
 
-.btn-default::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--gold-deep);
-  transform: translateX(-100%);
-  transition: transform var(--fast) var(--ease);
-  z-index: -1;
-  border-radius: 30px;
-}
-
-.btn-default:hover::before {
-  transform: translateX(0);
-}
-
 .btn-default:hover {
+  background-color: var(--gold-deep);
   box-shadow: 0 10px 24px -8px rgba(140, 101, 48, 0.65);
 }
 
