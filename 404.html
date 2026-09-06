@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/navbar.css">
     <link rel="stylesheet" href="src/css/button.css">
-    <link rel="stylesheet" href="src/css/gallery.css">
+    <link rel="stylesheet" href="src/css/error.css">
     <link rel="stylesheet" href="src/css/footer.css">
 
-    <title>Galeria — Essence Eventos</title>
+    <title>Página não encontrada — Essence Eventos</title>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
                 </li>
 
                 <li>
-                    <a href="gallery.html" class="current">Galeria</a>
+                    <a href="gallery.html">Galeria</a>
                 </li>
 
                 <li>
@@ -64,88 +64,35 @@
 
     <main>
 
-        <section class="gallery-hero reveal">
+        <section class="error-page reveal">
 
             <img src="src/images/floral-spray.svg" alt="" class="floral-top" aria-hidden="true">
             <img src="src/images/floral-spray.svg" alt="" class="floral-bottom" aria-hidden="true">
 
-            <p class="eyebrow">Registros que contam histórias</p>
-            <h1 class="script">nossa galeria</h1>
-            <p>
-                Um recorte dos momentos mais especiais que já ajudamos a
-                celebrar — cada imagem carrega um pouco da emoção do dia.
-            </p>
+            <span class="error-code" aria-hidden="true">404</span>
+
+            <div class="error-content">
+
+                <p class="eyebrow">Ops, por aqui não</p>
+
+                <h1 class="script">essa página se perdeu no caminho</h1>
+
+                <p class="error-text">
+                    O endereço pode ter mudado ou nunca ter existido.
+                    Mas a sua história com a gente pode continuar
+                    a partir daqui.
+                </p>
+
+                <div class="error-actions">
+                    <a href="index.html" class="btn btn-default">Voltar para o início</a>
+                    <a href="gallery.html" class="btn btn-outline">Ver nossa galeria</a>
+                </div>
+
+            </div>
 
         </section>
 
-        <div class="gallery-grid">
-
-            <figure class="gallery-item" data-category="cerimonia">
-                <img src="src/images/main.jpg" alt="Mãos entrelaçadas durante a cerimônia">
-                <figcaption class="gallery-caption">
-                    <span>Cerimônia</span>
-                    <p>Um sim guardado nas mãos</p>
-                </figcaption>
-            </figure>
-
-            <figure class="gallery-item" data-category="cerimonia">
-                <img src="src/images/SaveClip_App_708441928_17883807345581491_36045760631290514_n.jpg" alt="Noivos trocando votos durante a cerimônia">
-                <figcaption class="gallery-caption">
-                    <span>Cerimônia</span>
-                    <p>A troca de votos</p>
-                </figcaption>
-            </figure>
-
-            <figure class="gallery-item" data-category="makingof">
-                <img src="src/images/SaveClip_App_622657442_17862852504581491_8356659685489996486_n.jpg" alt="Noivos testa com testa na igreja">
-                <figcaption class="gallery-caption">
-                    <span>Making of</span>
-                    <p>Segundos antes do sim</p>
-                </figcaption>
-            </figure>
-
-            <figure class="gallery-item" data-category="recepcao">
-                <img src="src/images/SaveClip_App_589016596_18342706645224890_4035988972740324710_n.jpg" alt="Convidado no salão decorado antes da recepção">
-                <figcaption class="gallery-caption">
-                    <span>Recepção</span>
-                    <p>O salão pronto para receber</p>
-                </figcaption>
-            </figure>
-
-            <figure class="gallery-item" data-category="makingof">
-                <img src="src/images/SaveClip_App_694248623_17881562835581491_3489639540585082290_n.jpg" alt="Ajustando o véu da noiva antes da entrada">
-                <figcaption class="gallery-caption">
-                    <span>Making of</span>
-                    <p>Os últimos ajustes</p>
-                </figcaption>
-            </figure>
-
-            <figure class="gallery-item" data-category="recepcao">
-                <img src="src/images/SaveClip_App_782615552_17900299290581491_5009198736843632297_n.jpg" alt="Família celebrando junto ao bolo na recepção">
-                <figcaption class="gallery-caption">
-                    <span>Recepção</span>
-                    <p>Brindes e afeto</p>
-                </figcaption>
-            </figure>
-
-            <figure class="gallery-item" data-category="cerimonia">
-                <img src="src/images/SaveClip_App_589963015_18342706681224890_479718806173536414_n.jpg" alt="Celebrante conduzindo a cerimônia sob arco de flores">
-                <figcaption class="gallery-caption">
-                    <span>Cerimônia</span>
-                    <p>Sob o arco de flores</p>
-                </figcaption>
-            </figure>
-
-        </div>
-
     </main>
-
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
-        <button class="lightbox-prev" aria-label="Foto anterior"><i class="fa-solid fa-chevron-left"></i></button>
-        <img id="lightboxImg" src="" alt="">
-        <button class="lightbox-next" aria-label="Próxima foto"><i class="fa-solid fa-chevron-right"></i></button>
-    </div>
 
     <a
         href="https://wa.me/5511983184820"
@@ -200,7 +147,6 @@
     </footer>
 
     <script src="src/js/script.js"></script>
-    <script src="src/js/gallery.js"></script>
 
 </body>
 </html>
