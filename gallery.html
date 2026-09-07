@@ -78,73 +78,17 @@
 
         </section>
 
-        <div class="gallery-grid">
+        <p class="gallery-status" id="galleryStatus">Carregando fotos e vídeos…</p>
 
-            <figure class="gallery-item" data-category="cerimonia">
-                <img src="src/images/main.jpg" alt="Mãos entrelaçadas durante a cerimônia">
-                <figcaption class="gallery-caption">
-                    <span>Cerimônia</span>
-                    <p>Um sim guardado nas mãos</p>
-                </figcaption>
-            </figure>
-
-            <figure class="gallery-item" data-category="cerimonia">
-                <img src="src/images/SaveClip_App_708441928_17883807345581491_36045760631290514_n.jpg" alt="Noivos trocando votos durante a cerimônia">
-                <figcaption class="gallery-caption">
-                    <span>Cerimônia</span>
-                    <p>A troca de votos</p>
-                </figcaption>
-            </figure>
-
-            <figure class="gallery-item" data-category="makingof">
-                <img src="src/images/SaveClip_App_622657442_17862852504581491_8356659685489996486_n.jpg" alt="Noivos testa com testa na igreja">
-                <figcaption class="gallery-caption">
-                    <span>Making of</span>
-                    <p>Segundos antes do sim</p>
-                </figcaption>
-            </figure>
-
-            <figure class="gallery-item" data-category="recepcao">
-                <img src="src/images/SaveClip_App_589016596_18342706645224890_4035988972740324710_n.jpg" alt="Convidado no salão decorado antes da recepção">
-                <figcaption class="gallery-caption">
-                    <span>Recepção</span>
-                    <p>O salão pronto para receber</p>
-                </figcaption>
-            </figure>
-
-            <figure class="gallery-item" data-category="makingof">
-                <img src="src/images/SaveClip_App_694248623_17881562835581491_3489639540585082290_n.jpg" alt="Ajustando o véu da noiva antes da entrada">
-                <figcaption class="gallery-caption">
-                    <span>Making of</span>
-                    <p>Os últimos ajustes</p>
-                </figcaption>
-            </figure>
-
-            <figure class="gallery-item" data-category="recepcao">
-                <img src="src/images/SaveClip_App_782615552_17900299290581491_5009198736843632297_n.jpg" alt="Família celebrando junto ao bolo na recepção">
-                <figcaption class="gallery-caption">
-                    <span>Recepção</span>
-                    <p>Brindes e afeto</p>
-                </figcaption>
-            </figure>
-
-            <figure class="gallery-item" data-category="cerimonia">
-                <img src="src/images/SaveClip_App_589963015_18342706681224890_479718806173536414_n.jpg" alt="Celebrante conduzindo a cerimônia sob arco de flores">
-                <figcaption class="gallery-caption">
-                    <span>Cerimônia</span>
-                    <p>Sob o arco de flores</p>
-                </figcaption>
-            </figure>
-
-        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
 
     </main>
 
     <div class="lightbox" id="lightbox">
         <button class="lightbox-close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
-        <button class="lightbox-prev" aria-label="Foto anterior"><i class="fa-solid fa-chevron-left"></i></button>
-        <img id="lightboxImg" src="" alt="">
-        <button class="lightbox-next" aria-label="Próxima foto"><i class="fa-solid fa-chevron-right"></i></button>
+        <button class="lightbox-prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-media" id="lightboxMedia"></div>
+        <button class="lightbox-next" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 
     <a

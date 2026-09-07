@@ -81,32 +81,41 @@
   transform: scale(1.06);
 }
 
-.gallery-item .gallery-caption {
+.gallery-item--video .play-icon {
   position: absolute;
-  inset: auto 0 0 0;
-  padding: 26px 18px 14px;
-  background: linear-gradient(to top, rgba(46, 38, 34, 0.82), transparent);
-  color: #fff;
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity var(--fast) var(--ease), transform var(--fast) var(--ease);
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
 }
 
-.gallery-item:hover .gallery-caption {
-  opacity: 1;
-  transform: translateY(0);
+.gallery-item--video .play-icon i {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  background: rgba(250, 244, 236, 0.9);
+  color: var(--gold-deep);
+  border-radius: 50%;
+  font-size: 20px;
+  box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.5);
+  transition: transform var(--fast) var(--ease), background var(--fast) var(--ease);
 }
 
-.gallery-caption span {
-  font-size: 12px;
-  letter-spacing: 0.03em;
-  color: var(--gold-light);
+.gallery-item--video:hover .play-icon i {
+  transform: scale(1.1);
+  background: var(--gold);
+  color: var(--paper);
 }
 
-.gallery-caption p {
+.gallery-status {
+  text-align: center;
+  color: var(--ink-soft);
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 18px;
+  font-size: 17px;
+  padding: 20px 24px 0;
 }
 
 @media (max-width: 900px) {
@@ -148,12 +157,26 @@
   display: flex;
 }
 
-.lightbox img {
+.lightbox-media {
   max-width: min(900px, 100%);
+  max-height: 82vh;
+  animation: lightboxIn 0.25s var(--ease);
+}
+
+.lightbox-media img {
+  display: block;
+  max-width: 100%;
   max-height: 82vh;
   border-radius: 6px;
   box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.6);
-  animation: lightboxIn 0.25s var(--ease);
+}
+
+.lightbox-media iframe {
+  width: min(900px, 90vw);
+  height: min(506px, 50.6vw);
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.6);
 }
 
 @keyframes lightboxIn {
