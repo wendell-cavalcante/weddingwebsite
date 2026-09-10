@@ -1,234 +1,680 @@
 .contact-hero {
+
   position: relative;
+
   overflow: hidden;
+
   padding: 30px 0 0;
+
 }
 
 .contact-section {
+
   position: relative;
+
   max-width: var(--container);
+
   margin: 0 auto;
+
   padding: 60px 40px 110px;
+
   display: grid;
+
   grid-template-columns: 0.9fr 1.1fr;
+
   gap: 64px;
+
 }
 
 .contact-info .floral-top {
+
   position: absolute;
+
   top: -10px;
+
   left: -50px;
+
   width: 120px;
+
   height: 140px;
+
   opacity: 0.7;
+
   z-index: -1;
+
 }
 
 .contact-info h1 {
+
   font-size: 42px;
+
   line-height: 1.18;
+
 }
 
 .contact-info h1.script {
+
   font-size: 58px;
+
   color: var(--gold-deep);
+
 }
 
 .contact-text {
+
   margin-top: 18px;
+
   color: var(--ink-soft);
+
   font-size: 16px;
+
   line-height: 1.7;
+
   max-width: 420px;
+
 }
 
 .contact-channels {
+
   margin-top: 34px;
+
   padding: 0;
+
   list-style: none;
+
 }
 
 .contact-channels li {
+
   margin-bottom: 14px;
+
 }
 
 .contact-channels a {
+
   display: flex;
+
   align-items: center;
+
   gap: 14px;
+
   font-size: 15px;
+
   color: var(--ink);
+
   text-decoration: none;
+
   padding: 10px 14px;
+
   border-radius: 30px;
-  transition: background var(--fast) var(--ease), transform var(--fast) var(--ease), color var(--fast) var(--ease);
+
+  transition:
+    background var(--fast) var(--ease),
+    transform var(--fast) var(--ease),
+    color var(--fast) var(--ease);
+
 }
 
 .contact-channels a:hover {
+
   background: var(--paper);
+
   transform: translateX(6px);
+
   color: var(--gold-deep);
+
   box-shadow: 0 12px 26px -18px rgba(54, 43, 34, 0.4);
+
 }
 
 .contact-channels .icon-circle {
+
   width: 38px;
+
   height: 38px;
+
   border-radius: 50%;
+
   background: var(--cream-deep);
+
   color: var(--gold-deep);
+
   display: grid;
+
   place-items: center;
+
   font-size: 16px;
+
   flex-shrink: 0;
-  transition: background var(--fast) var(--ease), color var(--fast) var(--ease);
+
+  transition:
+    background var(--fast) var(--ease),
+    color var(--fast) var(--ease);
+
 }
 
 .contact-channels a:hover .icon-circle {
+
   background: var(--gold);
+
   color: var(--paper);
+
 }
 
 .contact-form {
+
   background: var(--paper);
+
   border: 1px solid var(--line);
+
   border-radius: 10px;
+
   padding: 40px;
+
   display: flex;
+
   flex-direction: column;
+
   gap: 22px;
+
   box-shadow: 0 30px 60px -40px rgba(54, 43, 34, 0.4);
+
 }
 
 .contact-form label {
+
   display: flex;
+
   flex-direction: column;
+
   gap: 8px;
+
   font-size: 13px;
+
   letter-spacing: 0.02em;
+
   color: var(--ink-soft);
+
 }
 
 .contact-form input,
 .contact-form textarea {
+
   width: 100%;
+
   box-sizing: border-box;
+
   font-family: var(--font-body);
+
   font-size: 15px;
+
   padding: 10px 4px;
+
   border: none;
+
   border-bottom: 1px solid var(--line);
+
   border-radius: 0;
+
   background: transparent;
+
   color: var(--ink);
+
   resize: vertical;
+
   transition: border-color var(--fast) var(--ease);
+
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
+
   color: var(--ink-soft);
+
   opacity: 0.55;
+
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
+
   outline: none;
+
   border-bottom: 1px solid var(--gold-deep);
+
 }
 
 .contact-form button {
+
   margin-top: 8px;
+
   align-self: flex-start;
+
   cursor: pointer;
+
 }
 
 .form-status {
+
   font-size: 14px;
+
   color: var(--gold-deep);
+
   min-height: 20px;
+
   margin: 0;
+
 }
 
+
+/* =========================================
+   RESPONSIVO
+   ========================================= */
+
 @media (max-width: 860px) {
+
   .contact-section {
+
     grid-template-columns: 1fr;
+
     padding: 40px 24px 60px;
+
     gap: 44px;
+
   }
 
   .contact-info .floral-top {
+
     display: none;
+
   }
 
   .contact-info h1 {
+
     font-size: 30px;
+
   }
 
   .contact-info h1.script {
+
     font-size: 42px;
+
   }
 
   .contact-form {
+
     padding: 26px;
+
   }
 
   .contact-form button {
+
     width: 100%;
+
     align-self: stretch;
+
     text-align: center;
+
   }
+
 }
+
+
+/* =========================================
+   MODAL DO INSTAGRAM
+   ========================================= */
+
 .instagram-modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
+
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  align-items: center;
+
+  justify-content: center;
+
+  z-index: 999;
+
 }
 
 .instagram-modal.show {
-    display: flex;
+
+  display: flex;
+
 }
 
 .instagram-modal-content {
-    background: var(--cream);
-    border-radius: 8px;
-    padding: 40px 32px;
-    max-width: 360px;
-    width: 90%;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+
+  background: var(--cream);
+
+  border-radius: 8px;
+
+  padding: 40px 32px;
+
+  max-width: 450px;
+
+  width: 90%;
+
+  text-align: center;
+
+  position: relative;
+
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+
 }
+
+
+/* botão de fechar */
 
 .instagram-modal-close {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    background: none;
-    border: none;
-    font-size: 18px;
-    color: var(--ink-soft);
-    cursor: pointer;
+
+  position: absolute;
+
+  top: 14px;
+
+  right: 14px;
+
+  width: 40px;
+
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0;
+
+  margin: 0;
+
+  background: transparent;
+
+  border: none;
+
+  font-size: 24px;
+
+  line-height: 1;
+
+  color: var(--ink-soft);
+
+  cursor: pointer;
+
+  z-index: 5;
+
 }
+
+.instagram-modal-close:hover {
+
+  color: var(--gold-deep);
+
+}
+
+
+/* ícone do Instagram */
 
 .instagram-modal-icon {
-    font-size: 40px;
-    color: var(--gold-deep);
-    margin-bottom: 16px;
+
+  display: block;
+
+  font-size: 40px;
+
+  color: var(--gold-deep);
+
+  margin: 8px auto 16px;
+
 }
+
+
+/* título */
 
 .instagram-modal-content h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+
+  font-size: 24px;
+
+  margin: 0 0 10px;
+
 }
 
+
+/* descrição */
+
 .instagram-modal-content p {
-    color: var(--ink-soft);
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 24px;
+
+  color: var(--ink-soft);
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  margin: 0 auto 24px;
+
+  max-width: 340px;
+
+}
+
+
+/* =========================================
+   BOTÃO DO INSTAGRAM
+   ========================================= */
+
+/*
+   O botão do modal recebe estilos próprios para
+   não herdar efeitos decorativos do botão global.
+*/
+
+.instagram-modal-content a.btn {
+
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: auto;
+
+  min-width: 250px;
+
+  max-width: 100%;
+
+  min-height: 52px;
+
+  padding: 14px 24px;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  white-space: normal;
+
+  line-height: 1.25;
+
+  border-radius: 999px;
+
+  overflow: hidden;
+
+  z-index: 1;
+
+}
+
+
+/*
+   Remove possíveis pseudo-elementos decorativos
+   do botão global que estavam causando a
+   sobreposição visual.
+*/
+
+.instagram-modal-content a.btn::before,
+.instagram-modal-content a.btn::after {
+
+  content: none !important;
+
+  display: none !important;
+
+}
+
+
+/* garante que o texto fique acima de qualquer efeito */
+
+.instagram-modal-content a.btn {
+
+  isolation: isolate;
+
+}
+
+
+/* =========================================
+   RESPONSIVO DO MODAL
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .instagram-modal-content {
+
+    width: calc(100% - 32px);
+
+    max-width: 400px;
+
+    padding: 36px 24px 30px;
+
+  }
+
+  .instagram-modal-content h3 {
+
+    font-size: 23px;
+
+  }
+
+  .instagram-modal-content p {
+
+    font-size: 14px;
+
+    margin-bottom: 22px;
+
+  }
+
+  .instagram-modal-content a.btn {
+
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 14px 18px;
+
+  }
+
+}
+
+
+/* =========================================
+   BOTÃO FLUTUANTE WHATSAPP
+   ========================================= */
+
+.whatsapp-float {
+
+  position: fixed;
+
+  right: 24px;
+
+  bottom: 24px;
+
+  width: 58px;
+
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #25D366;
+
+  color: #fff;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  font-size: 26px;
+
+  box-shadow: 0 10px 26px -8px rgba(37, 211, 102, 0.55);
+
+  z-index: 999;
+
+  transition:
+    transform var(--fast) var(--ease),
+    box-shadow var(--fast) var(--ease);
+
+}
+
+.whatsapp-float::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: 50%;
+
+  border: 2px solid #25D366;
+
+  animation: whatsappPulse 2.4s ease-out infinite;
+
+}
+
+.whatsapp-float:hover {
+
+  transform: translateY(-4px) scale(1.05);
+
+  box-shadow: 0 14px 30px -6px rgba(37, 211, 102, 0.65);
+
+}
+
+@keyframes whatsappPulse {
+
+  0% {
+
+    transform: scale(1);
+
+    opacity: 0.6;
+
+  }
+
+  100% {
+
+    transform: scale(1.6);
+
+    opacity: 0;
+
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .whatsapp-float {
+
+    width: 52px;
+
+    height: 52px;
+
+    right: 18px;
+
+    bottom: 18px;
+
+    font-size: 22px;
+
+  }
+
 }
